@@ -51,7 +51,7 @@ func main() {
 
 	api := ton.NewAPIClient(client)
 
-	block, err := api.CurrentMasterchainInfo(context.Background())
+	block, err := api.CurrentMasterchainInfo(ctx)
 	if err != nil {
 		log.Fatalln("Get Current Masterchain Info error: ", err)
 	}
